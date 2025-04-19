@@ -144,7 +144,6 @@ h1::after {
   transition: 0.3s;
   cursor: pointer;
   transform: rotate(0deg);
-
 }
 
 .page aside .menu-arrow:hover {
