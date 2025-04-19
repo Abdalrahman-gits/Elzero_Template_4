@@ -27,6 +27,31 @@
   overflow: hidden;
 }
 
+/* Buttons */
+.btn-shape {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+}
+
+.btn-primary {
+  display: block;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  transition-duration: var(--transition-d);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--main-alt-color);
+}
+
 /* Adjusting and justifying */
 .between-align-c {
   display: flex;
@@ -75,6 +100,10 @@
 
 .p-10 {
   padding: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
 }
 
 .pt-20 {
@@ -129,6 +158,9 @@
   margin-top: 25px;
 }
 
+.mr-5 {
+  margin-right: 5px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -159,6 +191,10 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
 
 .ml-20 {
@@ -212,6 +248,14 @@
 
 .c-blue {
   color: var(--main-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-red {
+  color: var(--red-color);
 }
 
 .op-half {
@@ -284,32 +328,6 @@
 .rad-50 {
   border-radius: 50%;
 }
-
-/* Buttons */
-.btn-shape {
-  display: block;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  width: fit-content;
-}
-
-.btn-primary {
-  display: block;
-  background-color: var(--main-color);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  width: fit-content;
-  transition-duration: var(--transition-d);
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: var(--main-alt-color);
-}
-
 
 /* Media */
 @media (max-width:767px) {
