@@ -140,7 +140,7 @@ h1::after {
   padding: 6px;
   font-size: 12px;
   font-weight: bold;
-  border-radius: 50%;
+  border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
   transform: rotate(0deg);
@@ -172,6 +172,14 @@ h1::after {
 .page .menu-closed h3::before,
 .page .menu-closed h3::after {
   display: none;
+}
+
+.deleted {
+  opacity: 0.5;
+}
+
+.deleted .text {
+  text-decoration: line-through;
 }
 
 .active {
@@ -432,6 +440,20 @@ header nav img {
   background-color: var(--green-color);
 }
 
+@media (max-width:767px) {
+  #targets .target {
+    flex-direction: column;
+  }
+  #targets .target > i {
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  #targets .details {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 /* Tickets */
 #tickets .states {
   flex-wrap: wrap;
@@ -484,6 +506,9 @@ header nav img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  #news button {
+    margin-top: 10px;
   }
   #news .latest img {
     margin-bottom: 15px;
@@ -633,6 +658,16 @@ header nav img {
   border-top: 1px solid #eee;
 }
 
+@media (max-width:767px) {
+  #last-post .post-title {
+    flex-direction: column;
+  }
+  #last-post img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 /* Social Media Stats */
 #social-media .app i {
   flex-shrink: 0;
@@ -693,6 +728,25 @@ header nav img {
 
 #social-media .linkedin i {
   background-color: #0860d6;
+}
+
+@media (max-width:767px) {
+  #social-media .icon {
+    flex-direction: column;
+  }
+  #social-media .icon i {
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+  }
+  #social-media .app a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #social-media .app {
+    flex-direction: column;
+    padding-right: 0 !important;
+  }
 }
 
 /* Projects Table */
